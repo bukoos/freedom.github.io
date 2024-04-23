@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сайт тістечок</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Ласощі Bakery</h1>
+      <p>Найсмачніші тістечка прямо до вашого столу</p>
+    </header>
+
+    <div class="menu">
+      <div class="item" data-price="150">
+        <img src="images/1.jpg" alt="Тістечко 1" />
+        <h3>Шоколадне тістечко</h3>
+        <p>Найсмачніше тістечко із шоколадом</p>
+        <p>Ціна: 150</p>
+        <button onclick="addToCart('Шоколадне тістечко', 150)">
+          Додати до кошика
+        </button>
+      </div>
+      <div class="item" data-price="125">
+        <img src="images/2.jpg" alt="Тістечко 2" />
+        <h3>Вафельна трубочка</h3>
+        <p>Трубочка з вашого дитинства</p>
+        <p>Ціна: 125</p>
+        <button onclick="addToCart('Вафельна трубочка', 125)">
+          Додати до кошика
+        </button>
+      </div>
+    </div>
+
+    <div class="cart">
+      <h2>Кошик</h2>
+      <ul id="cart-items"></ul>
+      <div class="total">
+        <h3>Загальна сума:</h3>
+        <span id="total-price">0 грн</span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
